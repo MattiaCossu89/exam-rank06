@@ -112,7 +112,7 @@ void sendall(int fd, t_client *list) {
 }
 
 void extract_msg(int fd, int id, t_client *clients, ssize_t size) {
-	char msg [4096 * 42];	
+	char msg [4096 * 100];	
 
 	for (int i = 0, j = 0; i < size; i++, j++) {
 		msg[j] = buffer[i];
